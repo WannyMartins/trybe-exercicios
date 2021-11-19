@@ -1,0 +1,8 @@
+Um homem apareceu após o proprietário ter apagado a luz de sua loja. v
+O ladrão era um homem. v
+O homem não exigiu dinheiro.f
+O homem que abriu a caixa registradora era o proprietário. ?
+O proprietário da loja esvaziou o conteúdo da caixa registradora. ?
+Após ter esvaziado o conteúdo da caixa registradora, o homem fugiu. f
+A história refere-se a uma série de acontecimentos onde se faz referência a apenas 3 pessoas: o proprietário da loja, um homem que pediu dinheiro e um membro da força policial. f
+Os seguintes acontecimentos da loja são verdadeiros: alguém exigiu dinheiro, ===v uma caixa registradora foi aberta, ===v seu conteúdo foi esvaziado ===? e um homem saiu correndo. ===v
