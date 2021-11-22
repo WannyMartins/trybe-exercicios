@@ -5,18 +5,44 @@
     <title>HTML</title>
     <style>
 
-        h1 {
-            font-size: 65px;
-            color:orange;            
+        body {
+            
+            font-size: 16px;
         }
 
-        #color {
+        h1 {
+            font-size: 65px;
+            color:orange;  
+            font-family: sans-serif;      
+        }
 
-            color: aqua;
+        p {
+            font-weight: 600;
+            font-size: 3em;
+            font-style:italic;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: overline;
+        }
+
+        #amarelo{
+            background-color: yellow;
+        }
+
+        #vermelho{
+            background-color: red;
+        }
+
+        #marrom{
+            background-color: brown;
+        }
+                     
+        #color {
+            color: rgb(1, 10, 10);
         }
 
         .estilo {
-            background-color: mediumpurple 
+            background-color: mediumpurple
         }
 
     </style>
@@ -24,11 +50,11 @@
   <body>
                
     <h1>Exercícios 3.2</h1>
-    <p class="estilo">Qual é a sua cor favorita?</p>
+    <p class="estilo">Qual é a sua cor fav
     <ul id="color"class="estilo">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="amarelo">Amarelo</li>
+      <li id="vermelho">Vermelho</li>
+      <li id="marrom">Marrom</li>
     </ul>
   </body>
 </html>
