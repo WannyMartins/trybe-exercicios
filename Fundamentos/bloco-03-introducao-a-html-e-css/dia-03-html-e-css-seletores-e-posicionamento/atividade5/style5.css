@@ -1,4 +1,51 @@
 ol{
     background-color: yellow;
+}
+ol li:nth-of-type(even){
+    color:green;
+    font-weight: 600;
 
+}
+ol li:nth-of-type(odd){
+    text-transform: uppercase;
+    font-weight: 600;
+}
+h1,h2,h3 {
+    color: red;
+
+}
+h1{
+    font-size: 40px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+li{
+    font-size: 20px;
+}
+.fonte-azul{
+    color:blue;
+}
+.rosa{
+    background-color: pink;
+}
+.StackOverflow :hover{
+    font-weight: 600;
+    color:orange;
+}
+.w3schools:hover{
+    font-weight: 600;
+    color:green;
+}
+.MDN:hover{
+    font-weight: 600;
+    color:black;
+}
+.DevDocs:hover{
+    font-weight: 600;
+    color: yellow;
+}
+.Trybe:hover{
+    font-weight: 600;
+    color:green;
 }
