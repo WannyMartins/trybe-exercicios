@@ -1,0 +1,38 @@
+body {
+     
+    font-size: 16px;
+}
+h1 {
+    font-size: 65px;
+    color:orange;  
+    font-family: 
+sans-serif;      
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+    font-style:italic;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: 
+overline;
+}
+#amarelo{
+    background-color:
+yellow;
+}
+#vermelho{
+    background-color: red;
+}
+#marrom{
+    background-color: brown;
+}
+             
+#color {
+    color: black
+}
+
+.estilo{
+    background-color:
+mediumpurple
+}
