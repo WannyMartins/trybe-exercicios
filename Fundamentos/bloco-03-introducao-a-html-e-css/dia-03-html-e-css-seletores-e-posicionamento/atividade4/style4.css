@@ -1,0 +1,41 @@
+
+
+div:hover:nth-of-type(1){
+  
+    border-style: groove;
+    border-color: red;
+
+    
+}
+
+div:hover:nth-of-type(2){
+    border-style: groove;
+    border-color: blue;
+        
+}
+
+div:hover:nth-of-type(3){
+    border-style: groove;
+    border-color: blueviolet;
+  
+}
+div:nth-of-type(3){
+    
+    font-size: 50px;
+
+}
+
+div:hover:nth-of-type(4){
+    border-style: groove;
+    border-color: black;
+}
+
+div:hover:nth-of-type(5){
+    border-style: groove;
+    border-color: yellow;
+  
+}
+
+h3{
+    font-size: 150%
+}
