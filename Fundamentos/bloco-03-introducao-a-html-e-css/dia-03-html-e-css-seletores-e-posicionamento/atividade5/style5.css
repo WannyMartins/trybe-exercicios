@@ -1,12 +1,12 @@
-ol{
+ ol li{
     background-color: yellow;
 }
-ol li:nth-of-type(even){
+ol li:nth-child(even){
     color:green;
     font-weight: 600;
 
 }
-ol li:nth-of-type(odd){
+ol li:nth-child(odd){
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -14,7 +14,7 @@ h1,h2,h3 {
     color: red;
 
 }
-h1{
+  h1 em, h2 em, h3 em{
     font-size: 40px;
     border: solid;
     border-width: 1px;
@@ -23,29 +23,34 @@ h1{
 li{
     font-size: 20px;
 }
-.fonte-azul{
-    color:blue;
+li em{
+    font-weight: 700;
+}
+#linguagens li:not(:nth-child(n+4)){
+
+    color: blue;
 }
 .rosa{
     background-color: pink;
 }
-.StackOverflow :hover{
-    font-weight: 600;
+#aliados li a:hover{
+    font-weight: 700;
+}
+#aliados li a[href*="stackoverflow"]{
+    
     color:orange;
 }
-.w3schools:hover{
-    font-weight: 600;
+#aliados li a[href*="w3schools"]{
+    
     color:green;
 }
-.MDN:hover{
-    font-weight: 600;
-    color:black;
+#aliados li a[href*="mozilla"]{
+     color:black;
 }
-.DevDocs:hover{
-    font-weight: 600;
+#aliados li a[href*="devdocs"]{
+    
     color: yellow;
 }
-.Trybe:hover{
-    font-weight: 600;
-    color:green;
+#aliados li a[href*="trybe"]{    
+    color:  green;
 }
