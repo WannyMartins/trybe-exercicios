@@ -144,7 +144,7 @@ switch (nomePeca.toLowerCase()) {
     break;
 }; */
 
-/* let nota = 100;
+/*  let nota =80;
 
 if(nota < 0 || nota > 100){
     console.log("Erro, não é uma porcentagem de nota válida!")
@@ -161,5 +161,67 @@ if(nota < 0 || nota > 100){
     console.log("E");
 } else if (nota < 50) {
     console.log("F");
-}  */
+}  
+ */ 
+
+/* const a = 1;
+const b = 1;
+const c = 2;
+
+if (a%2===0|| b%2===0 || c%2===0){
+  console.log("Existe número par entre os números inserido.")
+} else{
+  console.log("Só tem números ímpares.")
+} */
+
+/* let custo=1.5;
+let venda= 2;
+
+let imposto= custo * 20  / 100;
+
+let custoTotal = custo + imposto;
+
+let lucro = venda - custoTotal;
+let quantidadeVendida= 1000;
+
+  console.log(quantidadeVendida*lucro);
+ */
+
+/* let aliqINSS;
+let aliqIR;
+
+let salarioBruto = 3000.00;
+
+if (salarioBruto <= 1556.94) {
+    aliqINSS = salarioBruto * 0.08;
+} else if (salarioBruto <= 2594.92){
+    aliqINSS = salarioBruto * 0.09;  
+}else if (salarioBruto <= 5189.82){
+  aliqINSS = salarioBruto * 0.11;  
+    
+} else {
+  aliqINSS = 570.88;
+};  
+salarioBase = salarioBruto-aliqINSS;
+
+if(salarioBase<=1903.98){
+  aliqIR =  0;
+} else if(salarioBase<=2826.65){
+  aliqIR = (salarioBase * 0.075)-142.80;
+
+}else if(salarioBase<=3751.05){
+  aliqIR = (salarioBase * 0.15)-354.80;
+
+} else if(salarioBase<=4664.68){
+  aliqIR = (salarioBase * 0.225)-636.13;
+
+} else {
+  aliqIR = (salarioBase * 0.275)-869.36;
+
+};
+
+console.log("salário Líquido: " +(salarioBase-aliqIR));*/ 
+
+
+
 
