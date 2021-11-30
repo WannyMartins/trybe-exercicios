@@ -1,4 +1,4 @@
-
+/* 
 /////////////////COQUADRADO DE ASTERISCOS//
 
 let n = 5;// declarar variável"n";
@@ -24,4 +24,32 @@ for (let index= 0; index < n; index+=1){
  
 
 
+
+ */
+
+//////// TRIANGULO RETANGULO DE ASTERISCOS///////
+
+/* let n = 5;
+let simbolo = '*';
+let triangulo ="";
+
+for (let index = 0; index < n; index+=1) {
+    
+    triangulo= triangulo + simbolo;
+    console.log(triangulo)
+}
+ */
+
+//////////INVERTENDO O LADO DO TRIANGULO///////
+
+let n = 5;
+let simbolo = '*';
+let triangulo ="";
+
+for (let index = 0; index < n; index+=1) {
+    
+    triangulo= triangulo + simbolo;
+
+    console.log(triangulo)
+}
 
