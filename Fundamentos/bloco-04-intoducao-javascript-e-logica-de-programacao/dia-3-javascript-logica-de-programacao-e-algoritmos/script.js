@@ -72,6 +72,7 @@ console.log(maiorNumeroPrimo)
 
 
 /////////////////QUADRADO DE ASTERISCOS//
+
 /*
 let n = 5;// declarar variável"n";
 let asterisco = "*";// declarar o simbolo que irá substituir quando rodar o "for"
