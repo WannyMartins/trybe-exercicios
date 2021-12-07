@@ -69,7 +69,11 @@
         tagMain.className = "main-content"// atribui a variavel .'className', lembrando que atribui sem parenteses, tem aspas pq é uma string
         document.body.appendChild(tagMain);//só ai que faz o append Child do elemento.
 
-        //
+        //SECTION COM CLASSE E FILHO NA MAIN
+
+        let tagSection = document.createElement('section');
+        tagSection.className =  'center-content';
+        tagMain.appendChild(tagSection);// usar a variavel fica main facil.
         
 
 
