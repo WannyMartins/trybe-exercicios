@@ -75,8 +75,33 @@
         tagSection.className =  'center-content';
         tagMain.appendChild(tagSection);// usar a variavel fica main facil.
         
+        // CRIAR PARAGRAFO A PARTIR DA SECTION DO EXERCICIO ANTERIOR
+
+        let paragrafo = document.createElement('p');
+        paragrafo.innerText = "Paragrafo filho de section";
+        tagSection.appendChild(paragrafo);
+
+        //CRIAR SECTION COM CLASSE E FILHO DA MAIN
+
+        let sectionLeft = document.createElement("section");
+        sectionLeft.className = 'left-content';
+        tagMain.appendChild(sectionLeft);
 
 
+        //SECTION RIGTH
+
+        let  sectionRight= document.createElement("section");
+        sectionRight.className = 'right-content';
+        tagMain.appendChild(sectionRight);
+
+        //ADD IMAGEM COM SRC
+
+        let imagem = document.createElement('img');
+        imagem.src="https://picsum.photos/200";
+        imagem.className = "small-image";
+        sectionLeft.appendChild(imagem);
+
+        //ADD LISTA 
 
     </script>
   </body>
