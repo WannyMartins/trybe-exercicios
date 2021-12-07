@@ -111,7 +111,7 @@
         //faz um loop for para que cada li seja criada recebendo um innerText que é cada posição do array
         for (let i in numeros) {
             let listaLi = document.createElement('li');
-            listaLi.innerText = numeros[i];
+            listaLi.innerHTML = numeros[i];
             listaUL.appendChild(listaLi);        
         }
         
@@ -126,8 +126,36 @@
 
         // adicionando classe em tag criada
 
-        
+        let classeTitle= document.querySelector('h1');
+        classeTitle.className= 'title';
 
+        //adicionando classe em varias tags iguais
+
+        let classeDescription = document.querySelectorAll('h3');
+        for(let index =0; index< 3; index +=1){
+            classeDescription[index].className='description'
+        }
+
+        //removendo section com conteudo
+
+        let removeSection =document.querySelector('.left-content');
+        tagMain.removeChild(removeSection);
+
+        // centralizando section
+
+       let centralize = document.getElementsByClassName('.right-content')[0];
+        centralize.style.marginRigth= 'auto';
+
+        // trocar backgroud
+
+        let colorSection = document.getElementsByClassName('center-content')[0]
+        colorSection.parentNode.style.backgroundColor = 'green'
+
+        // remove elementos da ul
+        
+        let remove=document.querySelectorAll('ul');
+        remove.lastChild.remove();
+    
     </script>
   </body>
 </html>
