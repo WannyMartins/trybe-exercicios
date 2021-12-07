@@ -101,7 +101,32 @@
         imagem.className = "small-image";
         sectionLeft.appendChild(imagem);
 
-        //ADD LISTA 
+        //ADD LISTA UL
+
+        let listaUL = document.createElement('ul');
+        sectionRight.appendChild(listaUL);
+        //criar um array para armazenar o que quero em cada li
+        let numeros  = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+
+        //faz um loop for para que cada li seja criada recebendo um innerText que é cada posição do array
+        for (let i in numeros) {
+            let listaLi = document.createElement('li');
+            listaLi.innerText = numeros[i];
+            listaUL.appendChild(listaLi);        
+        }
+        
+        // CRIAR 3 TAGS H3
+
+
+        for(tag=1; tag<=3; tag +=1){
+        let tagH3 = document.createElement('h3');
+        tagH3.innerHTML="Título h3 filho da tag main";
+        tagMain.appendChild(tagH3);
+        }
+
+        // adicionando classe em tag criada
+
+        
 
     </script>
   </body>
