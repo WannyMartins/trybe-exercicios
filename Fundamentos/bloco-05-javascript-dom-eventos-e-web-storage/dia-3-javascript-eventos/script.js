@@ -48,3 +48,70 @@ function createDaysOfTheWeek() {
   };
   criaDiasNoMes();
 
+
+  function criandoBotaoFeriado(nomeBotao){
+    let buttonsContainer = document.querySelector('.buttons-container');
+
+    let botaoFeriado= document.createElement('button');
+    let botaoFeriadoId = 'btn-holiday';
+    botaoFeriado.innerHTML = nomeBotao;
+    botaoFeriado.id=botaoFeriadoId;
+    buttonsContainer.appendChild(botaoFeriado)
+  }
+  
+  criandoBotaoFeriado('Feriados');
+
+  function clickFeriados(){
+    let botaoHoliday = document.querySelector('#btn-holiday');
+    let holidayClick = document.querySelectorAll('.holiday');
+    let corBackground ='rgb(238,238,238)';
+    let voltaCor='white';
+
+    botaoHoliday.addEventListener('click', function(){
+      
+     for(i in holidayClick){
+      if(holidayClick[i].style.backgroundColor === voltaCor){
+        holidayClick[i].style.backgroundColor = corBackground;
+       }else{
+        holidayClick[i].style.backgroundColor=voltaCor
+       }
+       
+     }
+    })
+  }
+
+  clickFeriados();
+
+
+   function criandoBotaoSexta(nome){
+    let buttonContainer = document.querySelector('.buttons-container');
+
+    let botaoSexta= document.createElement('button');
+    let botaoSextaId = 'btn-friday';
+    botaoSexta.innerHTML = nome;
+    botaoSexta.id=botaoSextaId;
+    buttonContainer.appendChild(botaoSexta)
+  }
+  criandoBotaoSexta('Sexta-feira')
+
+function clickSexta(arrayDias){
+    let botaoFriday = document.querySelector('#btn-friday');
+    let fridayClick = document.getElementsByClassName('friday');
+    let texto ='SEXTOU'
+
+    botaoFriday.addEventListener('click', function(){
+      
+     for(let i=0; i < fridayClick.length; i += 1){
+      if(fridayClick[i].innerHTML !== texto){
+         fridayClick[i].innerHTML = texto;
+       }else {
+        fridayClick[i].innerHTML = arrayDias[i];
+
+        }
+      
+      }
+    })
+  }
+    let sextasDez =[4, 11, 18, 25];
+  clickSexta(sextasDez);
+
