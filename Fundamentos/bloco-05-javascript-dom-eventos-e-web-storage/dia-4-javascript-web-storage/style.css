@@ -1,0 +1,15 @@
+* {
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+p {
+    color: blue;
+    font-size: large;
+    font-family: coursive;
+    text-size-adjust: 50px;
+}
