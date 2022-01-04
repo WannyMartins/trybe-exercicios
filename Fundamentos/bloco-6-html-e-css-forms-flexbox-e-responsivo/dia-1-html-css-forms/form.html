@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+</head>
+    <link script.jsrel="stylesheet" href="style.css">
+<body>
+    <fieldset >
+        <label for="nome">Nome: </label>
+        <input type="text" name='nome' id='nome' maxlength="40" required>
+        <label for="e-mail">E-mail:</label>
+        <input type="email" name='e-mail' id='e-mail' maxlength="50" required>
+        <label for="cpf">CPF:</label>
+        <input type="text" name='cpf' id='cpf' maxlength="11" placeholder="Digite apenas numeros, sem pontos" required>
+        <label for="end">Endereço:</label>
+        <input type="text" name='end' id='end' maxlength="200" placeholder="Digite Rua, número" required>
+        <label for="cid">Cidade:</label>
+        <input type="text" name='cid' id='cid' maxlength="28" required>
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado" required>
+            <option id='mg' selected>Minas Gerais</option>
+            <option id='sp'>São Paulo</option>
+            <option id='sc'>Santa Catarina</option>
+            <option id='es'>Espirito Santo</option>
+            <option id='rs'>Rio Grande Do Sul</option>
+        </select>
+        <label for="compl1" >Compl:</label>
+        <input type="radio" name="compl" id="compl1" value='Casa' checked/>casa
+        <label for="compl2" ></label>
+
+        <input type="radio" name="compl" id="compl2" value = 'Apartamento'/>apartamento
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+</html>
