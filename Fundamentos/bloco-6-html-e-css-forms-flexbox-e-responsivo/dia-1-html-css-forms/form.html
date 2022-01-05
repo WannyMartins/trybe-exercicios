@@ -4,35 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum</title>
+    <title>Curriculo</title>
 </head>
-    <link script.jsrel="stylesheet" href="style.css">
+    <link script.jsrel="stylesheet" href="styles.css">
 <body>
-    <fieldset >
-        <label for="nome">Nome: </label>
-        <input type="text" name='nome' id='nome' maxlength="40" required>
-        <label for="e-mail">E-mail:</label>
-        <input type="email" name='e-mail' id='e-mail' maxlength="50" required>
-        <label for="cpf">CPF:</label>
-        <input type="text" name='cpf' id='cpf' maxlength="11" placeholder="Digite apenas numeros, sem pontos" required>
-        <label for="end">Endereço:</label>
-        <input type="text" name='end' id='end' maxlength="200" placeholder="Digite Rua, número" required>
-        <label for="cid">Cidade:</label>
-        <input type="text" name='cid' id='cid' maxlength="28" required>
-        <label for="estado">Estado:</label>
-        <select name="estado" id="estado" required>
-            <option id='mg' selected>Minas Gerais</option>
-            <option id='sp'>São Paulo</option>
-            <option id='sc'>Santa Catarina</option>
-            <option id='es'>Espirito Santo</option>
-            <option id='rs'>Rio Grande Do Sul</option>
-        </select>
-        <label for="compl1" >Compl:</label>
-        <input type="radio" name="compl" id="compl1" value='Casa' checked/>casa
-        <label for="compl2" ></label>
-
-        <input type="radio" name="compl" id="compl2" value = 'Apartamento'/>apartamento
-    </fieldset>
+    <header class='form-titulo'>
+        <h1>Formulário para cadastrar seu curriculo</h1>
+        <p>Preencha os campos abaixo:</p>
+    </header>
+    <main>
+        <form id='cv-form'>
+            <div class='form-linha'>
+                <fieldset >
+                    <div class='conteudo-linha'>
+                        <label for="nome">Nome: </label>
+                        <input type="text" name='nome' id='nome' maxlength="40" required>
+                    </div>
+                    <div class='conteudo-linha'>
+                        <label for="e-mail">E-mail: </label>
+                        <input type="email" name='e-mail' id='e-mail' maxlength="50" required>
+                    </div>
+                    <div class='conteudo-linha'>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name='cpf' id='cpf' maxlength="11" placeholder="Digite apenas numeros, sem pontos" required>
+                    </div>
+                    <div class='conteudo-linha'>
+                        <label for="end">Endereço:</label>
+                        <input type="text" name='end' id='end' maxlength="200" placeholder="Digite Rua, número" required>
+                    </div>
+                    <div class='conteudo-linha'>
+                        <label for="cid">Cidade:</label>
+                        <input type="text" name='cid' id='cid' maxlength="28" required>
+                    </div>
+                    <div class='conteudo-linha'>
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado" required>
+                            <option disabled selected value>Selecione Seu Estado</option>
+                         </select>
+                    </div>
+                    <div class='conteudo-linha'>
+                        <label for="tipoCasa" >Compl:</label>
+                        <input type="radio" name="tipoCasa" id="casa" value='Casa' required/>Casa
+                        <input type="radio" name="tipoCasa" id="ap" value = 'ap'/>Apartamento
+                    </div>    
+                </fieldset>
+                <fieldset>
+                    <div class='conteudo-linha'>
+                        <label for="resumo">Resumo do Meu Currículo: </label>
+                         <textarea name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea>
+                    </div>
+                    <div class='conteudo-linha'>   
+                        <label for="cargo">Cargo: </label>  
+                        <textarea name="cargo" id="cargo" cols="30" rows="10" maxlength="40" required></textarea>
+                    </div>
+                    <div class='conteudo-linha'>
+                        <label for="descricao">Descrição do cargo: </label>    
+                        <textarea name="descricao" id="descricao" cols="30" rows="10" maxlength="500" required></textarea>
+                    </div>
+                    <div class='conteudo-linha'>
+                        <label for="inicio">Data de início</label>
+                        <input type="text" name="inicio" id="data-inicio" value="" required>
+                    </div>
+                </fieldset>
+                <button type='submit' name='submit' id='submit'>Enviar</button>
+                <button type="button" name='limpar' id='limpar'>Limpar</button>
+            </div>
+        </form>
+    </main>
+    <section class='form-data'></section>
     <script src="script.js"></script>
 </body>
 </html>
