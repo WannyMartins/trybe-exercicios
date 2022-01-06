@@ -16,6 +16,17 @@ function criarOptionEstado(){
     }
  }
 
+ ////calendario interativo 
+ $('#data').datepicker({
+    format: 'dd/mm/yyyy',
+    language: 'pt-BR',
+    endDate: '+0d'
+});
+
+
+ 
+/* 
+
 function validaNome(){
     let name=document.querySelector('[name=nome]');
     
@@ -74,7 +85,7 @@ window.onload = function (){
 let data = document.getElementById('data')
 
 document.getElementById('myInputId').DatePickerX.init();
-
+/*
 
  
 /*  
@@ -91,4 +102,4 @@ function dataI(dd, mm, aaaa){
     if(aaaa<=0 || aaaa>2022 ){
         window.alert('ano inválido!')
     }
-} */ 
+ } */ 
