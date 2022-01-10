@@ -1,0 +1,130 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+ html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-size: 0.9rem ;
+    margin: 10px;
+  }
+  
+  article {
+  
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  img {
+      max-width: 100%;
+  }
+  
+  main {
+  
+  }
+  
+  section {
+  
+  }
+  
+  figure {
+    margin: 25px 0px;
+  }
+  
+  figcaption {
+
+    font-size: .8em;
+  }
+  @media screen and (min-width: 800px) and (max-width: 1299px){
+      header{
+         
+      }
+      h2{
+      }
+      figcaption{
+      }
+
+      section{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          
+
+      }
+      figure{
+          display: flex;
+          flex-direction: column;
+          background-color: aliceblue;
+          flex-basis: 350px;
+          margin-left: 5px;
+          margin-bottom: 20px;
+          border: solid 10px rgb(223, 218, 218);
+         
+      }
+
+      body{
+        font-size: 1rem ;
+        margin: 50px;
+    
+      }
+
+  } 
+  @media screen and (min-width: 1300px) {
+    header{
+        text-align: center;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+    figcaption{
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        flex-basis: 350px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+        border: solid 10px rgb(223, 218, 218);
+       
+    }
+    figcaption{
+        font-size: 1em;
+    }
+
+    body{
+        background-color: rgb(193, 237, 222);
+      font-size: 1rem ;
+      margin: auto;
+      max-width: 1000px;
+      text-align: justify;
+  
+    }
+
+} 
