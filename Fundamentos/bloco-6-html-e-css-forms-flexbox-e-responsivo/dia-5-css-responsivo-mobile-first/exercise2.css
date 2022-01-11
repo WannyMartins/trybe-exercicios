@@ -50,7 +50,6 @@ h2 {
 -moz-box-shadow: -1px -1px 1px #325d6f, 1px 1px 1px #bfe3f2;
 }
 h1{
-  display: flex;
   font-size: xx-large;
   text-align: center;
   background-color: aliceblue;
