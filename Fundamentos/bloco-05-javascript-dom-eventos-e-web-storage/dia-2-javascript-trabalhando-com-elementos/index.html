@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      // CRIANDO ELEMENTO E ADDICIONANDO NO LOCAL QUE QUERO  
+      let tagH1= document.createElement('h1');//atribui a variável o creatElement com a tag entre parenteses
+        tagH1.innerText= "Exercício 5.2 - JavaScript DOM";// atribui a variável criada o que ela recebera de valor
+        document.body.appendChild(tagH1)//navega até onde quer que seja adicionada, usa o appendChild e entre parenteses a variável que foi atribuída.
+
+        //ADICIONANDO TAG MAIN E INCULINDO CLASSE A ELA COMO FILHO DO BODY
+
+        let tagMain = document.createElement('main');// cria a variável para criar o elemento
+        tagMain.className = "main-content"// atribui a variavel .'className', lembrando que atribui sem parenteses, tem aspas pq é uma string
+        document.body.appendChild(tagMain);//só ai que faz o append Child do elemento.
+
+        //SECTION COM CLASSE E FILHO NA MAIN
+
+        let tagSection = document.createElement('section');
+        tagSection.className =  'center-content';
+        tagMain.appendChild(tagSection);// usar a variavel fica main facil.
+        
+        // CRIAR PARAGRAFO A PARTIR DA SECTION DO EXERCICIO ANTERIOR
+
+        let paragrafo = document.createElement('p');
+        paragrafo.innerText = "Paragrafo filho de section";
+        tagSection.appendChild(paragrafo);
+
+        //CRIAR SECTION COM CLASSE E FILHO DA MAIN
+
+        let sectionLeft = document.createElement("section");
+        sectionLeft.className = 'left-content';
+        tagMain.appendChild(sectionLeft);
+
+
+        //SECTION RIGTH
+
+        let  sectionRight= document.createElement("section");
+        sectionRight.className = 'right-content';
+        tagMain.appendChild(sectionRight);
+
+        //ADD IMAGEM COM SRC
+
+        let imagem = document.createElement('img');
+        imagem.src="https://picsum.photos/200";
+        imagem.className = "small-image";
+        sectionLeft.appendChild(imagem);
+
+        //ADD LISTA UL
+
+        let listaUL = document.createElement('ul');
+        sectionRight.appendChild(listaUL);
+        //criar um array para armazenar o que quero em cada li
+        let numeros  = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+
+        //faz um loop for para que cada li seja criada recebendo um innerText que é cada posição do array
+        for (let i in numeros) {
+            let listaLi = document.createElement('li');
+            listaLi.innerHTML = numeros[i];
+            listaUL.appendChild(listaLi);        
+        }
+        
+        // CRIAR 3 TAGS H3
+
+
+        for(tag=1; tag<=3; tag +=1){
+        let tagH3 = document.createElement('h3');
+        tagH3.innerHTML="Título h3 filho da tag main";
+        tagMain.appendChild(tagH3);
+        }
+
+        // adicionando classe em tag criada
+
+        let classeTitle= document.querySelector('h1');
+        classeTitle.className= 'title';
+
+        //adicionando classe em varias tags iguais
+
+        let classeDescription = document.querySelectorAll('h3');
+        for(let index =0; index< 3; index +=1){
+            classeDescription[index].className='description'
+        }
+
+        //removendo section com conteudo
+
+        let removeSection =document.querySelector('.left-content');
+        tagMain.removeChild(removeSection);
+
+        // centralizando section
+
+       let centralize = document.getElementsByClassName('.right-content')[0];
+        centralize.style.marginRigth= 'auto';
+
+        // trocar backgroud
+
+        let colorSection = document.getElementsByClassName('center-content')[0]
+        colorSection.parentNode.style.backgroundColor = 'green'
+
+        // remove elementos da ul
+        
+        let remove=document.querySelectorAll('ul');
+        remove.lastChild.remove();
+    
+    </script>
+  </body>
+</html>
