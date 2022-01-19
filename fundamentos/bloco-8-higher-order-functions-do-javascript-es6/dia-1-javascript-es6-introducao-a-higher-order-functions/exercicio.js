@@ -12,16 +12,38 @@ const contratados = (nomeCompleto) => {
        return {nomeCompleto, email: `${email}@trybe.com`};
     }
     
-console.log(newEmployees(contratados));
+////console.log(newEmployees(contratados));
 
 const checar = (myNum, numeroSorteado) => myNum === numeroSorteado;
 
 
 const sorteio = (myNum, callback) => {
     const numeroSorteado = Math.floor(Math.random()*5);
-   return callback(myNum, numeroSorteado) ? "Parabéns você ganhou" : "Tente novamente";
+   return callback(myNum, numeroSorteado) ? `Numero Sorteado foi: ${numeroSorteado}. Parabéns você ganhou!` : `Numero Sorteado foi: ${numeroSorteado}. Tente novamente`;
    
 }
 
-console.log(sorteio(2, checar));
+//console.log(sorteio(2, checar));
+
+ const gabaritos = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const respostasRecebida = ['A', 'C', 'N.A', 'D', 'N.A', 'A', 'N.A', 'A', 'D', 'B']
+let resultado = 0;
   
+const corrigeProvas = (gabarito, respostasRecebidas, callback) => {
+  let contador = 0;
+  for(let index = 0; index < gabarito.length; index += 1){
+    const result = callback(gabarito[index], respostasRecebidas[index]);
+    contador += result;
+  }
+  return `Resultado Final: ${contador} pontos.`;
+}
+
+const checarProvas = (gabarito, respostasRecebidas) => {
+  if (gabarito === respostasRecebidas){
+      return 1;
+    }if (respostasRecebidas === 'N.A'){
+      return 0;
+    }
+  return -0,5;
+};
+console.log(corrigeProvas(gabaritos, respostasRecebida, checarProvas))
