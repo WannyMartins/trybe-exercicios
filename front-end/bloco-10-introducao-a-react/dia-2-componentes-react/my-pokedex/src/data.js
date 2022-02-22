@@ -98,17 +98,6 @@ const pokemons = [
         image: "https://cdn2.bulbagarden.net/upload/2/2c/Spr_5b_148.png",
         moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)"
     },
-    {
-        id: 1,
-        name: "Bulbasaur",
-        type: 'Grass and Poison',
-        averageWeight: {
-            value: 6.9,
-            measurementUnit: "kg"
-        },
-        image: "https://archives.bulbagarden.net/media/upload/5/5f/001Bulbasaur_Channel.png",
-        moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)"
-    }
 
   ];
   
