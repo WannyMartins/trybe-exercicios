@@ -1,0 +1,31 @@
+.pokemon {
+    align-items: center;
+    border-radius: 10px;
+    border: 1px gray solid;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex: 1 1 auto;
+    padding: 10px 50px;
+    justify-content: space-around;
+    margin: 10px 10px;
+    min-width: 25%;
+  }
+  .nome {
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3); ;
+    font-size: x-large;
+    font-weight: 700;
+  }
+
+  .moreInfo {
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: rgb(165, 202, 235);
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .moreInfo:hover {
+    background-color: rgb(212, 228, 242);
+  }
+  
