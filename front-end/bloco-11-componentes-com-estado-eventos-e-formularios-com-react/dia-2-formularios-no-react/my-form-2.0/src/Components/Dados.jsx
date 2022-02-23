@@ -3,6 +3,7 @@ import './dados.css'
 
 class Dados extends React.Component {
     render(){
+        const { handleChange } = this.props;
         return(
             <div>
                 <label htmlFor="nome">
@@ -12,7 +13,9 @@ class Dados extends React.Component {
                     id="nome" 
                     className="nome" 
                     maxLength="40"
-                    required/>
+                    required
+                    onChange={ handleChange }
+                    />
                 </label>
                 <label htmlFor="email">
                     email:
@@ -21,16 +24,19 @@ class Dados extends React.Component {
                     id="email" 
                     className="email" 
                     maxLength="50"
+                    onChange={ handleChange }
                     required/>
                 </label>
-                <label htmlFor="CPF">
+                <label htmlFor="cpf">
                     CPF:
                     <input type="text" 
-                    name="CPF" 
-                    id="CPF" 
-                    className="CPF" 
+                    name="cpf" 
+                    id="cpf" 
+                    className="cpf" 
                     maxLength="11"
-                    required/>
+                    required
+                    onChange={ handleChange }
+                    />
                 </label>
             </div>
         )

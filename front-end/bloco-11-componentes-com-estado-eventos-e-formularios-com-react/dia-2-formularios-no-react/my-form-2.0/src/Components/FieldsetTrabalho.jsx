@@ -5,11 +5,13 @@ import Cargo from './Cargo';
 
 class FieldsetDados extends React.Component {
     render(){
+        const { handleChange } = this.props
+
         return(
             <fieldset className='fieldset'>
                 <legend>Dados Profissionais</legend>
-                <Resumo />
-                <Cargo />
+                <Resumo handleChange={ handleChange }/>
+                <Cargo handleChange={ handleChange }/>
             </fieldset>
         )
     }

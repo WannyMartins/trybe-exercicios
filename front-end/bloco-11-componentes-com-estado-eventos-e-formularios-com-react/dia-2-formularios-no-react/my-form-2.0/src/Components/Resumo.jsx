@@ -2,6 +2,8 @@ import React from 'react';
 
 class Resumo extends React.Component {
     render(){
+        const { handleChange } = this.props
+
         return(
             <div>
                 Resumo do Currículo:
@@ -11,7 +13,9 @@ class Resumo extends React.Component {
                     cols="30" 
                     rows="10" 
                     maxLength="1000" 
-                    required>
+                    required
+                    onChange={ handleChange }
+                    >
                 </textarea>
             </div>
         )
