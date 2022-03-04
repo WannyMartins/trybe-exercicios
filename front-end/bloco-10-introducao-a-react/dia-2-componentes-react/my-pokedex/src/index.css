@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< HEAD
 
 .pokedex {
   display: flex;
@@ -107,3 +108,5 @@ font-size: 2em;
   flex-wrap: wrap;
   margin: 10px 10px;
 } */
+=======
+>>>>>>> exercicios/11.1

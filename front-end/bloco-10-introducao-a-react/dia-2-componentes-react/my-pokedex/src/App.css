@@ -1,5 +1,9 @@
 .App {
+<<<<<<< HEAD
  display: flex;
  justify-content: center;
+=======
+  text-align: center;
+>>>>>>> exercicios/11.1
 }
 
