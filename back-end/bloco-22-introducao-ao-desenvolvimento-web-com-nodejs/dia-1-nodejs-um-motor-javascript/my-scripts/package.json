@@ -1,0 +1,20 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "velocidade": "node velocidade.js",
+    "imc": "node imc.js",
+    "sorteio": "node sorteio.js",
+    "start": "node index.js"
+
+  },
+  "author": "Wanny Martins",
+  "license": "ISC",
+  "devDependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "keywords": [],
+  "description": ""
+}
