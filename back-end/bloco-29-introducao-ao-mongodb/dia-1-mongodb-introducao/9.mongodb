@@ -1,0 +1,26 @@
+// 🚀 Exercício 9: Exiba os atributos title, isbn e pageCount dos 3 primeiros livros. NÃO retorne o atributo _id.
+
+
+use('class');
+
+db.books.find({}, {_id: 0, title: 1, isbn: 1, pageCount: 1}).limit(3);
+
+// Retorno
+
+//[
+//   {
+//     "title": "Flex 3 in Action",
+//     "isbn": "1933988746",
+//     "pageCount": 576
+//   },
+//   {
+//     "title": "Unlocking Android",
+//     "isbn": "1933988673",
+//     "pageCount": 416
+//   },
+//   {
+//     "title": "Flex 4 in Action",
+//     "isbn": "1935182420",
+//     "pageCount": 600
+//   }
+// ]

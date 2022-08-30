@@ -1,0 +1,19 @@
+// Exercício 2: Retorne o documento com o _id igual a 8, mas só exiba os atributos: _id e name.
+
+
+use('test');
+
+db.bios.find({_id: 8}, {id: 1, name: 1});
+
+// Retorno
+
+// [
+//   {
+//     "_id": 8,
+//     "name": {
+//       "first": "Yukihiro",
+//       "aka": "Matz",
+//       "last": "Matsumoto"
+//     }
+//   }
+// ]
