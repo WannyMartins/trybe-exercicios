@@ -23,4 +23,12 @@ class Students {
         const notasTrabalhos = this._trabalhos.reduce((nota, accNotas) => nota + accNotas);
         return notasprovas + notasTrabalhos;
     }
+    get avgNota() {
+        const soma = this.sumNota;
+        const total = this._notas.length + this._trabalhos.length;
+        return soma / total;
+    }
 }
+const newStudent = new Students(10, 'Wanny', [5, 6, 8, 10], [2, 5]);
+console.log(newStudent.sumNota);
+console.log(newStudent.avgNota);
